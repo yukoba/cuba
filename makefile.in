@@ -344,9 +344,9 @@ pub: dist
 	./mkwebpage
 
 clean:
-	-$(RM) $(TARFILE) $(TARDIR) demo-c.out \
+	-$(RM) $(TARFILE) $(TARDIR) demo-c.out demo-c.exe \
 	  partview.moc partview.o makefile.partview \
-	  cubal.h cubaq.h *.o */*.o */*.tm.c *.tm
+	  cubal.h cubaq.h *.o */*.o */*.tm.c *.tm libcuba.a libcuba.so
 
 distclean: clean
 	-$(RM) $(LIB) demo-c demo-fortran $(MATH) $(TOOLS) \
