@@ -1,2 +1,7 @@
 *.sh eol=lf
+configure eof=lf
+config.h.in eol=lf
+config.sub eof=lf
+config.guess eof=lf
+install-sh eof=lf
 * text=auto
