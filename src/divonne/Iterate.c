@@ -27,7 +27,8 @@ static void Iterate(This *t, count iregion, cint depth, cint isamples,
   if( isamples < 0 ) Split(t, iregion);
   else {
     region->isamples = isamples;
-    ExploreSerial(t, iregion);
+    int rv = ExploreSerial(t, iregion);
+    if (rv == -1) return;
   }
 
   ireg = iregion + RegionPtr(iregion)->next;
