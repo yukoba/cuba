@@ -10,7 +10,7 @@ To build libcuba.a and libcuba.so, run::
 
    $ ./configure
    $ make
-   $ ./makeshared.sh # (instead of make for libcuba.so)
+   $ ./makesharedlib.sh # (instead of make for libcuba.so)
 
 To use Cuba with Python, see the `PyCuba <https://github.com/JohannesBuchner/PyMultiNest>`_ project and its `documentation <https://johannesbuchner.github.io/PyMultiNest/pycuba.html>`_.
 
